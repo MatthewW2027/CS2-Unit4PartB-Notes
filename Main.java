@@ -61,8 +61,25 @@ public class Main {
       System.out.println(toDo); 
       // REMEMBER that indexes start at 0 
       // so 1 means we added to the SECOND spot 
-      
+
+      // list.get(int index) returns the item at that specified index 
+      toDo.get(0); 
+      String firstItem = toDo.get(0); 
+      // return type matches what the ArrayList holds 
+      System.out.println("Do this first: " + firstItem); 
+      // list.set(int index, obj newItem)
+      // replaces item at that index with a new one! 
+      String replaceItem = toDo.set(0, "learn to fly"); 
+      System.out.println(toDo);
+      System.out.println("We replaced: " + replaceItem); 
+
+      // list.remove(int index) deletes the item at that index 
+      // shifting everything else back one number 
+      // also returns the removed item! (called E on the quick reference)
+      String removeItem = toDo.remove(2); 
+      System.out.println(toDo); 
+      System.out.println("We removed the item: " + removeItem); 
 
 
-   }
-}
+   } // END MAIN METHOD 
+} // END CLASS 
